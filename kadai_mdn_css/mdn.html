@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* モバイルファースト設計 */
+        
+        /* スマホ用ナビゲーション（デフォルト） */
+        .sp-nav {
+            display: block;
+        }
+        
+        .pc-nav {
+            display: none;
+        }
+        
+        /* PC用のスタイル (768px以上の画面幅) */
+        @media screen and (min-width: 768px) {
+            .sp-nav {
+                display: none;
+            }
+            
+            .pc-nav {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- スマホ用ナビゲーション -->
+    <nav class="sp-nav">
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- PC用ナビゲーション -->
+    <nav class="pc-nav">
+        <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        回転します
+    </div>
+
+</body>
+
+</html>
